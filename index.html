@@ -1,110 +1,35 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Neuvetra</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #E9E1D6;
-      color: #362B11;
-    }
-    header {
-      background-color: #626E5A;
-      color: #E9E1D6;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #E9E1D6;
-      font-weight: bold;
-    }
-    .hero {
-      text-align: center;
-      padding: 5rem 2rem;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      margin: 0;
-      color: #362B11;
-    }
-    .hero h2 {
-      font-size: 1.5rem;
-      margin: 10px 0;
-      color: #626E5A;
-    }
-    .hero p {
-      font-size: 1rem;
-      max-width: 600px;
-      margin: 20px auto 0;
-      color: #362B11;
-    }
-    section {
-      padding: 3rem 2rem;
-    }
-    section h2 {
-      text-align: center;
-      margin-bottom: 2rem;
-      color: #362B11;
-    }
-    .unit {
-      margin-bottom: 2rem;
-    }
-    .unit h3 {
-      color: #626E5A;
-    }
-    .unit ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-    footer {
-      background-color: #626E5A;
-      color: #E9E1D6;
-      text-align: center;
-      padding: 1.5rem;
-    }
-    footer a {
-      color: #E9E1D6;
-      text-decoration: none;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
+  <!-- Navbar -->
   <header>
-    <div class="logo">Neuvetra</div>
     <nav>
-      <a href="#about">About</a>
-      <a href="#units">Units</a>
-      <a href="#contact">Contact</a>
+      <ul>
+        <li><a href="#about">Abouts</a></li>
+        <li><a href="#units">Units</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <!-- Hero -->
+  <!-- Hero Section -->
   <section class="hero">
     <h1>Neuvetra</h1>
-    <h2>Healing with Insight, Living with Care</h2>
-    <p>Neuvetra lahir untuk menjembatani riset ilmiah, ekspresi kreatif, dan layanan kesehatan yang berempati untuk kualitas hidup yang lebih baik.</p>
-  </section>
-
-  <!-- About -->
-  <section id="about">
-    <h2>Tentang Neuvetra</h2>
-    <p style="text-align:center; max-width:700px; margin:auto;">
-      Neuvetra hadir sebagai ekosistem yang memadukan riset, ekspresi kreatif, pengabdian masyarakat, dan layanan fisioterapi dalam satu kesatuan untuk mendukung kualitas hidup.
+    <h2 class="tagline">Healing with Insight, Living with Care</h2>
+    <p class="description">
+      Neuvetra lahir untuk menjembatani riset ilmiah, ekspresi kreatif, dan layanan kesehatan yang berempati untuk kualitas hidup yang lebih baik.
     </p>
   </section>
 
-  <!-- Units -->
+  <!-- Units Section -->
   <section id="units">
-    <h2>Unit Neuvetra</h2>
-
+    <h2>Neuvetra sebagai ekosistem</h2>
     <div class="unit">
       <h3>Neuvetra Research</h3>
       <ul>
@@ -112,7 +37,6 @@
         <li>Formal-Minded Education (ForMed Edu) – Edukasi di Media Sosial</li>
       </ul>
     </div>
-
     <div class="unit">
       <h3>Neuvetra Atelier</h3>
       <ul>
@@ -121,7 +45,6 @@
         <li>Kolaborasi Seniman/Brand</li>
       </ul>
     </div>
-
     <div class="unit">
       <h3>Neuvetra Roots Project</h3>
       <ul>
@@ -131,7 +54,6 @@
         <li>Neuvetra Seed Scholarship – Program Beasiswa</li>
       </ul>
     </div>
-
     <div class="unit">
       <h3>Neuvetra Physiocare</h3>
       <ul>
@@ -142,21 +64,20 @@
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- Contact Section -->
   <section id="contact">
-    <h2>Kontak</h2>
-    <p style="text-align:center;">
-      Email: <a href="mailto:neuvetragroup@gmail.com">neuvetragroup@gmail.com</a><br/>
-      Lokasi: Jakarta, Indonesia
-    </p>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:neuvetragroup@gmail.com">neuvetragroup@gmail.com</a></p>
+    <p>Location: Jakarta, Indonesia</p>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; <span id="year"></span> Neuvetra | All rights reserved.</p>
+    <p>&copy; <span id="year"></span> Neuvetra. All rights reserved.</p>
   </footer>
 
   <script>
+    // auto update year
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
