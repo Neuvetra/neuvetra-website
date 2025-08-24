@@ -1,147 +1,163 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Neuvetra — Healing with Insight, Living with Care</title>
-<style>
-/* ========= Brand Colors ========= */
-:root{
-  --cream:#E9E1D6;   /* base / paper */
-  --green:#626E5A;   /* primary */
-  --brown:#362B11;   /* text dark */
-  --tan:#8D7F59;     /* secondary accent */
-  --ink:#362B11;
-  --muted:#6b6f6a;
-  --border:#e6e1d7;
-}
-*{box-sizing:border-box}
-body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6;color:var(--ink);background:#fff}
-header{position:sticky;top:0;background:rgba(255,255,255,.9);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--border);z-index:50}
-.container{max-width:1024px;margin:0 auto;padding:0 16px}
-.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
-a{text-decoration:none;color:inherit}nav a{margin-left:16px;color:var(--muted);font-weight:600}nav a:hover{color:var(--ink)}
-.hero{padding:72px 0;background:
-  linear-gradient(180deg, rgba(233,225,214,.9), rgba(141,127,89,.08));}
-h1{font-size:40px;line-height:1.2;margin:0}
-.badge{display:inline-block;font-size:12px;padding:6px 10px;border-radius:999px;background:#f6f3ee;border:1px solid var(--border)}
-.brand{background:linear-gradient(90deg,var(--green),var(--tan));-webkit-background-clip:text;background-clip:text;color:transparent}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;border:1px solid var(--green);background:var(--green);color:#fff;font-weight:700}
-.btn:hover{filter:brightness(1.06)}
-.btn.outline{background:#fff;color:var(--green)}
-.grid{display:grid;gap:16px}.cards{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
-.card{border:1px solid var(--border);border-radius:16px;padding:16px;background:#fff}
-.section{padding:64px 0}.section h2{font-size:28px;margin:0 0 8px}.section p.desc{color:var(--muted);margin-top:8px}
-.small{font-size:14px;color:var(--muted)}
-.footer{border-top:1px solid var(--border);padding:32px 0;color:var(--muted)}
-input,textarea{width:100%;padding:10px;border-radius:10px;border:1px solid var(--border);background:#fff}
-form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-@media (max-width:640px){h1{font-size:32px} form .row{grid-template-columns:1fr}}
-.logo-dot{width:32px;height:32px;border-radius:12px;background:
-  linear-gradient(135deg,var(--green),var(--tan),var(--cream));border:1px solid var(--border)}
-.tagline{font-weight:600;color:var(--tan)}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neuvetra</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #E9E1D6;
+      color: #362B11;
+    }
+    header {
+      background-color: #626E5A;
+      color: #E9E1D6;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #E9E1D6;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 5rem 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+      color: #362B11;
+    }
+    .hero h2 {
+      font-size: 1.5rem;
+      margin: 10px 0;
+      color: #626E5A;
+    }
+    .hero p {
+      font-size: 1rem;
+      max-width: 600px;
+      margin: 20px auto 0;
+      color: #362B11;
+    }
+    section {
+      padding: 3rem 2rem;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #362B11;
+    }
+    .unit {
+      margin-bottom: 2rem;
+    }
+    .unit h3 {
+      color: #626E5A;
+    }
+    .unit ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    footer {
+      background-color: #626E5A;
+      color: #E9E1D6;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    footer a {
+      color: #E9E1D6;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-<header>
-  <div class="container nav">
-    <a href="#top" style="display:flex;align-items:center;gap:10px">
-      <div class="logo-dot"></div>
-      <strong>Neuvetra</strong>
-    </a>
+  <!-- Header -->
+  <header>
+    <div class="logo">Neuvetra</div>
     <nav>
-      <a href="#about">About</a><a href="#units">Units</a><a href="#podcast">Podcast</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="#units">Units</a>
+      <a href="#contact">Contact</a>
     </nav>
-  </div>
-</header>
+  </header>
 
-<main id="top">
+  <!-- Hero -->
   <section class="hero">
-    <div class="container grid" style="grid-template-columns:1.1fr .9fr;align-items:center">
-      <div>
-        <span class="badge">Community • Science • Care</span>
-        <h1>Healing with Insight, <br>Living with Care — <span class="brand">Neuvetra</span></h1>
-        <p class="small">Riset, edukasi, fashion bermakna, hingga layanan fisioterapi terpadu. Kami menghubungkan pengetahuan, budaya, dan praktik untuk kualitas hidup yang lebih baik.</p>
-        <div style="display:flex;gap:12px;margin-top:12px">
-          <a class="btn" href="#units">Jelajahi Unit →</a>
-          <a class="btn outline" href="#contact">Kontak Kami</a>
-        </div>
-        <p class="tagline" style="margin-top:10px;">Tagline: Healing with Insight, Living with Care</p>
-      </div>
-      <div class="card">
-        <div class="grid cards">
-          <div class="card"><strong>Neuvetra Research</strong><p class="small">Proyek riset, publikasi SINTA, dan translasi sains.</p></div>
-          <div class="card"><strong>Neuvetra Atelier</strong><p class="small">Fashion bernarasi, podcast, dan budaya gerak.</p></div>
-          <div class="card"><strong>Neuvetra Physiocare</strong><p class="small">Klinik, gym, & hidroterapi—evidence-based.</p></div>
-        </div>
-      </div>
+    <h1>Neuvetra</h1>
+    <h2>Healing with Insight, Living with Care</h2>
+    <p>Neuvetra lahir untuk menjembatani riset ilmiah, ekspresi kreatif, dan layanan kesehatan yang berempati untuk kualitas hidup yang lebih baik.</p>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>Tentang Neuvetra</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+      Neuvetra hadir sebagai ekosistem yang memadukan riset, ekspresi kreatif, pengabdian masyarakat, dan layanan fisioterapi dalam satu kesatuan untuk mendukung kualitas hidup.
+    </p>
+  </section>
+
+  <!-- Units -->
+  <section id="units">
+    <h2>Unit Neuvetra</h2>
+
+    <div class="unit">
+      <h3>Neuvetra Research</h3>
+      <ul>
+        <li>Independent Research Program (IRP) – Riset & Inovasi</li>
+        <li>Formal-Minded Education (ForMed Edu) – Edukasi di Media Sosial</li>
+      </ul>
+    </div>
+
+    <div class="unit">
+      <h3>Neuvetra Atelier</h3>
+      <ul>
+        <li>Dew Rebel Fashion</li>
+        <li>N. Atelier Talk – Podcast</li>
+        <li>Kolaborasi Seniman/Brand</li>
+      </ul>
+    </div>
+
+    <div class="unit">
+      <h3>Neuvetra Roots Project</h3>
+      <ul>
+        <li>Abdi Mas Vetra – Edukasi & Pengabdian Masyarakat</li>
+        <li>Free Physio – Bakti Sosial dengan Fisioterapi Gratis</li>
+        <li>Program Komunitas & Kampanye</li>
+        <li>Neuvetra Seed Scholarship – Program Beasiswa</li>
+      </ul>
+    </div>
+
+    <div class="unit">
+      <h3>Neuvetra Physiocare</h3>
+      <ul>
+        <li>Nge-Gym (L|P)</li>
+        <li>Neuvetra Physiocare – Klinik Fisioterapi & Mini Hydrotherapy</li>
+        <li>Hydro-Soul Sanctuary – Hydrotherapy Pool</li>
+      </ul>
     </div>
   </section>
 
-  <section id="about" class="section">
-    <div class="container">
-      <h2>Sains yang membumi, budaya yang menguatkan</h2>
-      <p class="desc">Neuvetra lahir untuk menjembatani riset ilmiah, ekspresi kreatif, dan layanan kesehatan yang berempati.</p>
-    </div>
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Kontak</h2>
+    <p style="text-align:center;">
+      Email: <a href="mailto:neuvetragroup@gmail.com">neuvetragroup@gmail.com</a><br/>
+      Lokasi: Jakarta, Indonesia
+    </p>
   </section>
 
-  <section id="units" class="section">
-    <div class="container">
-      <h2>Neuvetra sebagai ekosistem</h2>
-      <p class="desc">Empat unit kerja yang saling terhubung untuk dampak berkelanjutan—dari ide hingga layanan.</p>
-      <div class="grid cards" style="margin-top:16px">
-        <div class="card"><h3>Neuvetra Research</h3><ul class="small"><li>Desain studi & analisis data</li><li>Publikasi SINTA (target S3)</li><li>Konversi skripsi → artikel</li></ul></div>
-        <div class="card"><h3>Neuvetra Atelier</h3><ul class="small"><li>Fashion bertema kesehatan</li><li>Podcast: cerita, sains, budaya</li><li>Kolaborasi seniman/brand</li></ul></div>
-        <div class="card"><h3>Neuvetra Roots Project</h3><ul class="small"><li>Edukasi & pengabdian masyarakat</li><li>Program komunitas & kampanye</li><li>Tools berhenti merokok: SEBAT</li></ul></div>
-        <div class="card"><h3>Neuvetra Physiocare</h3><ul class="small"><li>Klinik fisioterapi berbasis bukti</li><li>Gym & hidroterapi terpadu</li><li>Program pencegahan nyeri</li></ul></div>
-      </div>
-    </div>
-  </section>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Neuvetra | All rights reserved.</p>
+  </footer>
 
-  <section id="podcast" class="section">
-    <div class="container">
-      <h2>Podcast & Narasi</h2>
-      <p class="desc">YouTube/Podcast <strong>coming soon</strong>. Sementara, kamu bisa hubungi kami via email untuk kolaborasi media.</p>
-      <div class="card">
-        <p class="small" style="margin:0;">Belum ada link YouTube saat ini.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Program & Inisiatif</h2>
-      <div class="grid cards" style="margin-top:16px">
-        <div class="card"><strong>SEBAT</strong><p class="small">Sensor Emosi Breathing Anti-Tembakau.</p></div>
-        <div class="card"><strong>Kelas Komunitas</strong><p class="small">Nyeri & Napas.</p></div>
-        <div class="card"><strong>Move & Care</strong><p class="small">Gerakan lingkungan.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section">
-    <div class="container grid" style="grid-template-columns:1fr 1fr;gap:16px">
-      <div class="card">
-        <h3>Kontak</h3>
-        <p class="small">Email: <a href="mailto:neuvetragroup@gmail.com">neuvetragroup@gmail.com</a></p>
-        <p class="small">WhatsApp: — (belum tersedia)</p>
-        <a class="btn" href="mailto:neuvetragroup@gmail.com">Kirim Email</a>
-      </div>
-      <div class="card">
-        <h3>Info & Lokasi</h3>
-        <p class="small">Jakarta, Indonesia</p>
-        <p class="small">Untuk konsultasi riset atau perawatan, sertakan tujuan & waktu.</p>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="footer">
-  <div class="container grid" style="grid-template-columns:1fr 1fr 1fr">
-    <div><strong>Neuvetra</strong><p class="small">© <span id="year"></span> Neuvetra.</p></div>
-    <div><p class="small"><strong>Units</strong></p><p class="small">Research · Atelier · Roots · Physiocare</p></div>
-    <div><p class="small"><strong>Kontakt</strong></p><p class="small"><a href="mailto:neuvetragroup@gmail.com">neuvetragroup@gmail.com</a></p></div>
-  </div>
-</footer>
-<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
